@@ -1,0 +1,93 @@
+{
+
+"_comment_0": "Initialise constants",
+
+"SEED":100,
+"SONG_LENGTH": 20,
+"NUM_SONG_FEATURES": 3,
+"NUM_META_FEATURES": 20,
+
+"_comment_1": "Initialise data paths",
+
+"FULL_DATA_PATH": "../../data/skipgram/dataset_matrices/full_data_matrix.npy",
+"TRAIN_DATA_PATH": "../../data/skipgram/dataset_matrices/train_data_matrix.npy",
+"VALID_DATA_PATH": "../../data/skipgram/dataset_matrices/valid_data_matrix.npy",
+"TEST_DATA_PATH": "../../data/skipgram/dataset_matrices/test_data_matrix.npy",
+
+"_comment_2": "Initialise music attribute encoder paths",
+
+"P_LE_PATH": "../../data/skipgram/object_storage/y_p_encode.p",
+"D_LE_PATH": "../../data/skipgram/object_storage/y_d_encode.p",
+"R_LE_PATH": "../../data/skipgram/object_storage/y_r_encode.p",
+
+"_comment_3": "Initialise training parameters",
+
+"TEMP_MAX":1000,
+"BATCH_SIZE":256,
+"PRE_TRAIN_LR":1e-2,
+"PRE_TRAIN_EPOCHS":40,
+"ADV_TRAIN_EPOCHS":220,
+"ADV_TRAIN_G_LR":1e-4,
+"ADV_TRAIN_D_LR":1e-4,
+"MAX_GRAD_NORM":5.0,
+
+"_comment_4": "Initialise evaluation parameters",
+
+"N_GRAMS":[2, 3, 4, 5],
+"EVAL_INTERVAL":1,
+"EVAL_RUNS":6,
+
+"_comment_5": "Initialise generator parameters",
+
+"G_EMB_UNITS":[32, 16, 8],
+"G_EMB_DROPOUT_RATE":[0.1, 0.1, 0.1],
+"G_PROJ_UNITS":[64, 32, 16],
+"G_PROJ_DROPOUT_RATE":[0.1, 0.1, 0.1],
+"G_MEM_SLOTS":[1, 1, 1],
+"G_HEAD_SIZE":[64, 32, 16],
+"G_NUM_HEADS":[4, 4, 4],
+"G_NUM_BLOCKS":[2, 2, 2],
+
+"Attention_EMB_UNITS":[20, 20, 20],
+"Attention_EMB_DROPOUT_RATE":[0.1, 0.1, 0.1],
+"Attention_PROJ_UNITS":[20, 20, 20],
+"Attention_PROJ_DROPOUT_RATE":[0.1, 0.1, 0.1],
+"Attention_MEM_SLOTS":[1, 1, 1],
+"Attention_HEAD_SIZE":[64, 64, 64],
+"Attention_NUM_HEADS":[4, 4, 4],
+"Attention_NUM_BLOCKS":[4, 4, 4],
+
+"_comment_6": "Initialise discriminator parameters",
+
+"D_EMB_UNITS":[32, 16, 8],
+"D_EMB_DROPOUT_RATE":[0.1, 0.1, 0.1],
+"D_PROJ_UNITS":64,
+"D_PROJ_DROPOUT_RATE":0.1,
+"D_MEM_SLOTS":1,
+"D_HEAD_SIZE":64,
+"D_NUM_HEADS":2,
+"D_NUM_BLOCKS":2,
+
+
+"_comment_7": "Initialise checkpoint paths",
+
+"PRE_TRAIN_CKPT_PATH": "../../checkpoints/pre_train_c_hybrid_gan",
+"ADV_TRAIN_CKPT_PATH": "../../checkpoints/adv_train_c_hybrid_gan",
+
+"_comment_8": "Initialise logging paths",
+
+"LOG_DIR": "../../logs",
+"TRAIN_LOG_DIR": "../../logs/train",
+"VALID_LOG_DIR": "../../logs/valid",
+"TEST_LOG_DIR": "../../logs/test",
+"TEST_LOGS_FILENAME": "../../results/c_hybrid_gan/logs/test_logs.csv",
+"TEST_RESULT_LOGS_FILENAME": "../../results/c_hybrid_gan/logs/test_result_logs.csv",
+"REUSE_TEST_LOGS": 1,
+"REUSE_TEST_RESULT_LOGS": 0,
+
+"_comment_9": "Initialise encoder model paths",
+
+"SYLL_MODEL_PATH": "../../data/skipgram/models/syllEncoding_20190419.bin",
+"WORD_MODEL_PATH": "../../data/skipgram/models/wordLevelEncoder_20190419.bin"
+
+}
