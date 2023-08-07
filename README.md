@@ -1,4 +1,3 @@
-===============================================================
 Melody Generation from Lyrics with Local Interpretability
 ===============================================================
 Wei Duan, Yi Yu, Xulong Zhang, Shuhua Tang, Wei Li, Keizo Oyama
